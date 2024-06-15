@@ -1,6 +1,7 @@
 <template>
 	<div class="quotes-container" style="height: 100%">
-		<SplitLeftRight :split="0.8">
+<!--	split控制左右比例，之前是0.8，为了全屏改为1	-->
+		<SplitLeftRight :split="1">
 			<template slot="left">
 				<div class="top-content">
 					<ButtonsLine :tags="tags" :defaultTag="defaultTag" v-on:change="handlerChangeTag"></ButtonsLine>

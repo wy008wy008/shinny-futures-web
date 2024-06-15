@@ -1,5 +1,6 @@
 <template>
-	<tr @click="handlerClick" @dblclick="handlerDbClick">
+	<tr @click="handlerDbClick">
+<!--	<tr @click="handlerClick" @dblclick="handlerDbClick">-->
 		<!-- @contextmenu="handlerRowContextmenu" -->
 		<td>
 			<div>{{ins_id}}</div>

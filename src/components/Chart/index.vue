@@ -36,13 +36,14 @@
 	import ChartSet from './index'
 	// 不同周期对应秒数
 	const Periods = {
-		'5s': 5 * 1e9,
+		// '5s': 5 * 1e9,
 		'1m': 60 * 1e9,
 		'5m': 60 * 5 * 1e9,
 		'15m': 60 * 15 * 1e9,
 		'30m': 60 * 30 * 1e9,
 		'1H': 60 * 60 * 1e9,
-		'1D': 60 * 60 * 24 * 1e9
+		'1D': 60 * 60 * 24 * 1e9,
+		'1W': 60 * 60 * 24 * 7 * 1e9
 	}
 
 	export default {
@@ -51,7 +52,7 @@
 			return {
 				width: this.$root.windowWidth,
 				periods: Object.keys(Periods),
-				selectedPeriod: '1m',
+				selectedPeriod: '1D',
 				selectedItem: 'candle',
 				indicators: {
 					'ma3': {

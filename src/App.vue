@@ -5,18 +5,18 @@
 				<div slot="top" class="split-pane">
 					<router-view name="quotes"></router-view>
 				</div>
-				<div slot="trigger" class="split-horizontal">
-					<div class="split-horizontal-dots">
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
-					</div>
-				</div>
-				<div slot="bottom" class="split-pane">
-					<router-view name="user"></router-view>
-				</div>
+<!--				<div slot="trigger" class="split-horizontal">-->
+<!--					<div class="split-horizontal-dots">-->
+<!--						<span class="dot"></span>-->
+<!--						<span class="dot"></span>-->
+<!--						<span class="dot"></span>-->
+<!--						<span class="dot"></span>-->
+<!--						<span class="dot"></span>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div slot="bottom" class="split-pane">-->
+<!--					<router-view name="user"></router-view>-->
+<!--				</div>-->
 			</Split>
 		</Content>
 	</Layout>
@@ -165,10 +165,10 @@
 			}
 		}
 
-		// fix iview bug 水平分割块
-		.ivu-split-horizontal > .ivu-split-trigger-con {
-			height: 100%;
-			width: 0;
-		}
+		//// fix iview bug 水平分割块
+		//.ivu-split-horizontal > .ivu-split-trigger-con {
+		//	height: 100%;
+		//	width: 0;
+		//}
 	}
 </style>

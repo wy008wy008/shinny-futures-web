@@ -14,14 +14,15 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 const QuotesTableRow = [
+	// {
+	// 	name: '合约代码',
+	// 	prop: 'instrument_id',
+	// 	width: 80
+	// },
 	{
-		name: '合约代码',
-		prop: 'instrument_id',
-		width: 80
-	}, {
-		name: '合约中文名',
+		name: '合约名称',
 		prop: 'ins_name',
-		width: 70
+		width: 80
 	}, {
 		name: '最新价',
 		prop: 'last_price',
@@ -32,32 +33,6 @@ const QuotesTableRow = [
 		formatter: function (item) {
 			return FormatPrice(item['last_price'], item['price_decs'])
 		}
-	}, {
-		name: '买价',
-		prop: 'bid_price1',
-		width: 60,
-		className: 'col-buy',
-		formatter: function (item) {
-			return FormatPrice(item['bid_price1'], item['price_decs'])
-		}
-	}, {
-		name: '买量',
-		prop: 'bid_volume1',
-		width: 60,
-		className: 'col-buy',
-	}, {
-		name: '卖价',
-		prop: 'ask_price1',
-		width: 60,
-		className: 'col-sell',
-		formatter: function (item) {
-			return FormatPrice(item['ask_price1'], item['price_decs'])
-		}
-	}, {
-		name: '卖量',
-		prop: 'ask_volume1',
-		width: 60,
-		className: 'col-sell'
 	}, {
 		name: '涨跌',
 		prop: 'change',
@@ -86,6 +61,32 @@ const QuotesTableRow = [
 		className: function (item) {
 			return item['change'] > 0 ? 'R' : (item['change'] < 0 ? 'G' : '')
 		}
+	},{
+		name: '买价',
+		prop: 'bid_price1',
+		width: 60,
+		className: 'col-buy',
+		formatter: function (item) {
+			return FormatPrice(item['bid_price1'], item['price_decs'])
+		}
+	}, {
+		name: '买量',
+		prop: 'bid_volume1',
+		width: 60,
+		className: 'col-buy',
+	}, {
+		name: '卖价',
+		prop: 'ask_price1',
+		width: 60,
+		className: 'col-sell',
+		formatter: function (item) {
+			return FormatPrice(item['ask_price1'], item['price_decs'])
+		}
+	}, {
+		name: '卖量',
+		prop: 'ask_volume1',
+		width: 60,
+		className: 'col-sell'
 	}, {
 		name: '持仓量',
 		prop: 'open_interest',

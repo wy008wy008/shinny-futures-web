@@ -27,7 +27,8 @@ const RootData = {
 	name: 'tianqin-web',
 	windowHeight: window.innerHeight,
 	windowWidth: window.innerWidth,
-	appSplit: 0.6
+	//页面上下部分的比例，原来是0.6
+	appSplit: 1
 }
 
 const RootApp = new Vue({

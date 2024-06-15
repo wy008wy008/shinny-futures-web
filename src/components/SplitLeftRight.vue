@@ -1,20 +1,20 @@
 <template>
 	<Split v-model="this_split" class="split-container">
-		<div slot="left" class="split-pane left">
+		<div slot="left" class="split-pane">
 			<slot name="left"></slot>
 		</div>
-		<div slot="trigger" class="split-vertical">
-			<div class="split-vertical-dots">
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-			</div>
-		</div>
-		<div slot="right" class="split-pane right">
-			<slot name="right"></slot>
-		</div>
+<!--		<div slot="trigger" class="split-vertical">-->
+<!--			<div class="split-vertical-dots">-->
+<!--				<span class="dot"></span>-->
+<!--				<span class="dot"></span>-->
+<!--				<span class="dot"></span>-->
+<!--				<span class="dot"></span>-->
+<!--				<span class="dot"></span>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		<div slot="right" class="split-pane right">-->
+<!--			<slot name="right"></slot>-->
+<!--		</div>-->
 	</Split>
 </template>
 <script>
@@ -35,6 +35,7 @@
 	}
 </script>
 <style lang="scss">
+
 	.split-container {
 		height: 100%;
 

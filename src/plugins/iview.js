@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import iView from 'iview'
+//为了全屏现实，注释掉了iview样式
 import 'iview/dist/styles/iview.css'
 // import './assets/fonticon.css'
 
